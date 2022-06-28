@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Motoplex Valle</title>
+        <link rel="shortcut icon" href=".\Fotos\Logo3.png">
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+       <div id="grid">
+          <div class="navbar">
+             <div class="dropdown">
+               <button class="dropbtn">
+                 <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="dropdown-content">
+                 <a href="./index.html">Home</a>
+                 <a href="./New.html">Motos Nuevas</a>
+                 <a href="./Used.html"> Motos Usadas</a>
+                 <a href="./rodadas.html">Rodadas</a>
+                 <a href="./boutique.html">Accesorios</a>
+               </div>
+             </div> 
+           </div>
+    </header>
+    <body class="new">
+    <div class="slideshow-container">
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="/Fotos/mp3 precio.jpeg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="/Fotos/vespa precio 2.jpeg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <img src="/Fotos/vespa precio 3.jpeg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="/Fotos/Napoli precios.jpeg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="/Fotos/eletrica precio.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 8</div>
+          <img src="/Fotos/vy stone precio.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 8</div>
+          <img src="/Fotos/aprilia scooter precio.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 8</div>
+          <img src="/Fotos/VT85 aniversario.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        </body>
+      <footer>
+    
+     </footer>
+       </div> 
+    </body>
+    </html>
+ 
+ 
