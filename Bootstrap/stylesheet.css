@@ -1,0 +1,7 @@
+*{
+    background: rgb(100, 200, 200);
+    background: radial-gradient(circle, rgba(100,200,200)0%, rgba(148,187,233,1)100%)
+}
+.carousel slide{
+display: flex;
+}
