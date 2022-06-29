@@ -1,7 +1,10 @@
-*{
-    background: rgb(100, 200, 200);
-    background: radial-gradient(circle, rgba(100,200,200)0%, rgba(148,187,233,1)100%)
-}
+
 .carousel slide{
 display: flex;
+}
+.new{
+    background-image: url(./Fotos/Vespa\ tienda\ 2.jpeg);
+  }
+.input-group mb-3{
+    background-color: aliceblue;
 }
