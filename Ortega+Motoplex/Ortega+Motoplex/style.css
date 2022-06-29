@@ -112,7 +112,7 @@ h1{
   .dropdown {
     float: left;
     overflow: hidden;
-    background-image: url("/Fotos/Logo2.png");
+    background-image: url("./Fotos/Logo2.png");
     background-size: cover;
   }
   
@@ -350,5 +350,5 @@ h1{
     to {opacity: 1}
   }
   .new{
-    background-image: url(/Fotos/Vespa\ tienda\ 2.jpeg);
+    background-image: url(./Fotos/Vespa\ tienda\ 2.jpeg);
   }
